@@ -1,10 +1,10 @@
 case class Player(first:String,last:String)
 
 var two = Player("Marry", "Jane")
-println( two.first )
+println( two first )
 
 var one = Player(first="John", last="Mac")
-one.last
+one last
 
 def singleExpression: List[String] => (List[Int], List[Int]) = 
     {a => a map (_.toInt) partition (_ < 30)}
@@ -20,18 +20,18 @@ case class Square(var side: Int) extends Maker {
 }
 
 val a = Square(12)
-a.area
-a.make
+a area
+a make
 
 val b = Square(5)
-b.area
+b area
 
 trait CheckIt extends Maker {
   override def make = "Done"
 }
 
 var p = new Square(5) with CheckIt
-p.make
+p make
 
 
 
