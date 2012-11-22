@@ -39,4 +39,4 @@ var l = 10::20::5::Nil
 def sqrt(x:Int) = x*x
 l map { sqrt _ }
 l map { x => x*x }
-
+l map (sqrt _)
