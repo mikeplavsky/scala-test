@@ -13,6 +13,7 @@ singleExpression( List("34","50", "20", "70" ))
 
 trait Maker {
   def make = ""
+  def make_i(i:String) = i
 }
 
 case class Square(var side: Int) extends Maker {
@@ -32,6 +33,7 @@ trait CheckIt extends Maker {
 
 var p = new Square(5) with CheckIt
 p make
+p make_i "Nicely done!"
 
 
 
