@@ -35,5 +35,8 @@ var p = new Square(5) with CheckIt
 p make
 p make_i "Nicely done!"
 
-
+var l = 10::20::5::Nil
+def sqrt(x:Int) = x*x
+l map { sqrt _ }
+l map { x => x*x }
 
