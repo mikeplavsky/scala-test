@@ -42,5 +42,7 @@ l map { x => x*x }
 l map (sqrt _)
 
 val x = 10::5::2::3::4::15::1::0::Nil
-val (a,b) = x partition {_ < 4 }
+val (a,b) = x partition { _ < 4 }
 val c = a ::: b
+
+type Pred[A] = A => Boolean 
